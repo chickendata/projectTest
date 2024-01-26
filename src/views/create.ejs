@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a user</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/api/v1/product/list">Home</a>
+      <a href="/create" class="active">Create Product</a>
+    </div>
+
+    <div class="form-add-new">
+      <form action="/create-product" method="post">
+        <fieldset>
+          <legend>Add new product</legend>
+
+          <div class="input-group">
+            <label for="">Tên sản phẩm: </label>
+            <input type="text" name="nameProduct" />
+          </div>
+          <div class="input-group">
+            <label for="">File: </label>
+            <input type="file" name="image" />
+          </div>
+          <div class="input-group">
+            <label for="">Giá: </label>
+            <input type="text" name="price" />
+          </div>
+          <div class="input-group">
+            <label for="">Mô tả: </label>
+            <input type="text" name="description" />
+          </div>
+          <div class="input-group">
+            <label for="">Ngày tạo: </label>
+            <input type="text" name="dayCreate" />
+          </div>
+          <div class="input-group">
+            <label for="">Ngày cập: </label>
+            <input type="text" name="dayDeal" />
+          </div>
+          <div>
+            <button>Save</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
